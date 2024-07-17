@@ -91,20 +91,20 @@ SELECT COUNT(*) AS female_count
 FROM scooter
 WHERE Gender = 'female' and [state]='washington' ;
 -------------------------------------------------------------------
---the most earlist year in only in newyork
+--the most earlist year  only in newyork
 
 SELECT min(birth_year) AS most_recent_year
 FROM scooter
 WHERE state = 'newyork';
 
 -------------------------------------------------------------------
---the most recent year in only in newyork
+--the most recent year  only in newyork
 
 SELECT MAX(birth_year) AS most_recent_year
 FROM scooter
 WHERE state = 'newyork';
 ------------------------------------------------------------------------
---the most common year in only in newyork
+--the most common year  only in newyork
 --and do not show the null values in the birth_year
 SELECT Birth_Year, COUNT(*) AS occurrences
 FROM scooter
